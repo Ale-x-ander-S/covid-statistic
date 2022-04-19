@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+
+<h3 *ngIf="apiService.errorMessage.length">
+  {{this.apiService.errorMessage}}
+</h3>
+
+<span class="subtitle">*Countries marked in red have new cases of the disease</span>
+
+<div class="container">
+
+  <app-card-country
+    *ngIf="modal"
+    (close)="modal = false"
+    [selectedCountry]="selectedCountry"
+  >
+  </app-card-country>
+
+  <ul *ngFor="let country of data; let index = index">
+    <li>
+      <a (click)="onSelectedCountry(country)">
+        {{index + 1}}. {{country.country | countryName}}
+      </a>
+      <span [ngStyle]="{color: +country.cases.new > 0 ? 'red' : 'green'}">
+        {{country.cases.new}}
+      </span>
+    </li>
+  </ul>
+
+</div>
+
+

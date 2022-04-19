@@ -1,0 +1,19 @@
+<div class="backdrop"></div>
+
+<div class="container">
+  <h1>{{country}}</h1>
+  <hr>
+  <h3>Population: {{selectedCountry.population | number}}</h3>
+  <ul>
+    <li>Active: {{active | number}}</li>
+    <li>Critical: {{critical | number}}</li>
+    <li>New: {{new | number}}</li>
+    <li>Recovered: {{recovered | number}}</li>
+    <li [ngStyle]="{color: newDeath > 0 ? 'red': 'yellowgreen'}"
+    >
+      New Death: {{newDeath | number}}
+    </li>
+  </ul>
+<button (click)="closeCard()">Close</button>
+</div>
+

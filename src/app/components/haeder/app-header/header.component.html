@@ -1,0 +1,22 @@
+<header>
+    <span>
+      <a routerLink="/">Home</a>
+    </span>
+  <span>
+      <a routerLink="/countries">Countries</a>
+    </span>
+  <span>
+      <a routerLink="/about">About the project</a>
+    </span>
+  <span>
+  <app-combo-box
+    [items]="items"
+  >
+    <input
+      [(ngModel)]="value"
+      type="text"
+      placeholder="Find a country">
+  </app-combo-box>
+</span>
+</header>
+

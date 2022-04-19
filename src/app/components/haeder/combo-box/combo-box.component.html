@@ -1,0 +1,23 @@
+<label>
+  <ng-content></ng-content>
+  <div class="toggle" (mousedown)="toggle()"></div>
+</label>
+
+<div *ngIf="open" class="list" (click)="noop()">
+  <div
+    *ngFor="let item of filteredItems; let index = index"
+    class="item"
+    [class.item_active]="isActive(index)"
+    (mousedown)="onClick()"
+    (mouseenter)="onMouseEnter(index)"
+  >
+    <a href="#"> {{item.country | countryName}} </a>
+  </div>
+</div>
+
+<app-card-country
+  *ngIf="modal"
+  (close)="modal = false"
+  [selectedCountry]="selectedCountry"
+>
+</app-card-country>

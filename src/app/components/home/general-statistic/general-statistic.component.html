@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>{{title}}</h1>
+
+  <h3 *ngIf="apiService.errorMessage.length">
+    {{this.apiService.errorMessage}}
+  </h3>
+
+  <p>Statistical data for the: {{date | date: 'dd.MM.YYYY'}}</p>
+
+  <div class="data-box">
+
+    <div class="statistic">
+      <ul>
+        <li>New human infections: {{newInfections | number}}</li>
+        <li>Recovered people: {{recovered | number}}</li>
+        <li>Active infected: {{active | number}}</li>
+        <li>In critical condition: {{critical | number}}</li>
+        <li>Death: {{death | number}}</li>
+        <li class="deathPer1000">Died {{deadPer1000}} per 1000 people</li>
+      </ul>
+    </div>
+
+    <div class="diagram">
+      <app-pie-chart
+        [recoveredPercent]="recoveredPercent"
+        [deathPercent]="deathPercent"
+      ></app-pie-chart>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.container {
+  width: 98vw;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 70px;
+    font-size: 80px;
+    font-weight: lighter;
+  }
+
+  h3 {
+    color: red;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+}
+
+.data-box {
+  display: flex;
+  min-width: 100%;
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  min-width: 330px;
+}
+
+.diagram {
+  width: 70%;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: lighter;
+  font-family: Calibri, sans-serif;
+}
+
+.deathPer1000 {
+  margin-top: 60px;
+  margin-left: -20px;
+  font-size: 24px;
+  font-family: Calibri, sans-serif;
+  font-weight: lighter;
+  color: #f6471c;
+  list-style-type: none;
+}
