@@ -1,27 +1,21 @@
 # Covid Statistic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+Angular project, version 13.2.2.
 
-## Development server
+<a href="https://covid-bf19d.web.app">Go to application</a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p>The purpose of this SPA is to display data and present it by grouping it.</p>
+<p>The site contains information aggregated on the following levels:</p>
+<p>— World</p>
+<p>— Country</p>
 
-## Code scaffolding
+<span>The numbers presented here are provided only for exploratory and research purposes.
+The accuracy is based on the  <a href="https://rapidapi.com/api-sports/api/covid-193/">source data</a></span>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Third-party code
+<p> - <a href="https://www.chartjs.org/">Chart.js</a></p>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Image alt](https://github.com/red51143/covid-statistic/raw/master/home.png)
+![Image alt](https://github.com/red51143/covid-statistic/raw/master/contries.png)
+![Image alt](https://github.com/red51143/covid-statistic/raw/master/modal.png)
